@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan</title>
+    <link rel="shortcut icon" href="img/slide02.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- NAVRBAR  -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-center" href="#">
+                <img src="img/SPARTAN.jpg" alt="" width="80s">
+            </a>
+
+            <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toogle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Opiniones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tendencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Estadisticas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- CARROUSEL -->
+
+    <div class="slide-contenedor w-100">
+        <div class="miSlider fade">
+            <img src="img/1 (1).jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="img/1 (2).jpg" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="img/1 (3).jpg" alt="">
+        </div>
+        <div class="direcciones">
+            <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+            <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+        </div>
+    </div>
+
+
+
+    <!-- RIOBBON -->
+   <div id="ribbon" class="container-fluid">
+        <div id="birthday" class="container w-50 pl-5 rounded-lg">
+
+                <div class="col-sm" id="md">
+                    <header>
+                        <div class="textos">
+                           <h1> <a href="#" id="abrir">Cyberpunk esta en Crisis</a></h1>
+                        </div>
+                    </header>
+                    <div id="miModla" class="modal">
+                        <div class="flex" id="flex">
+                            <div class="contenido-modal">
+                                <div class="modal-header flex">
+                                    <h2>Cyberpunk esta en crisi</h2>
+                                    <span class="close" id="close">&times;</span>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam nam mollitia ullam perspiciatis commodi iusto culpa explicabo eligendi et debitis, dignissimos natus ipsam esse amet excepturi. Recusandae provident tempora nihil iste suscipit vel nisi vitae non quod, saepe odit esse ipsum eius consequatur cumque dolorem delectus, aspernatur molestias aliquam voluptatem ad facere. Nam harum autem repellendus iure distinctio enim. Et maiores, modi beatae rem placeat pariatur nesciunt quidem nam minus!</p>
+                                </div>
+                                <div class="footer">
+                                    <h3>Hecho por David santiago &copy;</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+     </div> 
+
+
+
+
+
+    <!-- SEPARADOR RIBBON -->
+    <div id="separator-ribbon">
+        <div class="content bg-dark"></div>
+    </div>
+
+    <!-- GAMES -->
+    <div id="games">
+        <div class="container-md p-5">
+            <div class="row pt-5">
+                <h3 class="text-center pb-5 pt-5 h1">JUEGOS DESTACADOS</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/cyberpunk1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="Cyberpunk2077.html">
+                                    <h5 class="card-title">Cyberpunk2077</h5>
+                                </a>
+                                <p class="card-text">Cyberpunk 2077 es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Tu personaje es V, un mercenario que persigue un implante único que permite alcanzar la inmortalidad.</p>
+                            </div>
+                        </div>                    
+                </div>
+                <div class="col-sm">                    
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/dragonball1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="DragonBall.html">
+                                    <h5 class="card-title">DragonBall: Kakarot</h5>
+                                </a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>                    
+                </div>
+                <div class="col-sm">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/guilty-gear-strive-nagoriyuki-y-leo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="Guitygearstrive.html">
+                                    <h5 class="card-title">Guilty Gear Strive</h5>
+                                </a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/finalfantasy1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="FinalFantasy.html">
+                                    <h5 class="card-title">Final Fantasy VII: Remake</h5>
+                                </a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-sm">                    
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/nioh2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="nioh2.html">
+                                    <h5 class="card-title">Nioh 2</h5>
+                                </a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-sm">
+                    <a href="wasteland3.html">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/wasteland.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wasteland3</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm">
+                    <a href="vampire.html">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/vampire.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vampire: Bloodlines 2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="elden.html">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/eldenrings1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Elden Rings</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <a href="AmongUs.html">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="img/amongus1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Among Us</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+   
+    <!-- PLAY NINTENDO -->
+    <div id="play">
+        <div class="container-sm p-5">
+            <div class="row">
+                <h3 class="text-center h1">Isabelle and friends on Play Nintendo</h3>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-3 d-none d-md-block">
+                    <img src="img/isabelle.png" alt="" class="w-100">
+                </div>
+
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col p-1">
+                            <!-- CARD -->
+                            <div class="card bg-primary text-white">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="img/ph-01.jpg" class="w-100" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD -->
+                        </div>
+                        <div class="col p-1">
+                            <!-- CARD -->
+                            <div class="card bg-warning text-white">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="img/ph-02.jpg" class="w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col p-1">
+                            <!-- CARD -->
+                            <div class="card bg-danger text-white">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="img/ph-03.jpg" class="w-100" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD -->
+                        </div>
+                        <div class="col p-1">
+                            <!-- CARD -->
+                            <div class="card bg-success text-white">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="img/ph-04.jpg" class="w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer" class="p-5">
+        <div class="container w-50 pt-5">
+            <div class="row row-cols-md-2 justify-content-md-center">
+                <div class="col text-center">
+                    <a href="#">
+                        <button class="btn btn-lg rounded-pill btn-warning w-100 p-3 shadow-sm font-weigth-bold">Customer Support</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center py-5">
+                <div class="col text-center font-weight-light"></div>
+                    <p>For Nintendo 3DS systems, use Parental Controls to restrict 3D <img src="img/nioh2.jpeg" class="card-img-top" alt="..."> mode for children 6 and under.</p>
+                    <p>Internet access required for online features. For more info, go to support.nintendo.com.</p>
+                    <p>Games and amiibo accessories sold separately. Figures shown not actual size. Compatibility and functionality of amiibo may vary per game. Visit amiibo.com for specific details on how each amiibo works.</p>
+                    <p>© 2001 - 2020 Nintendo. Nintendo properties are trademarks of Nintendo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

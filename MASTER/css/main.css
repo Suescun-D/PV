@@ -1,0 +1,297 @@
+h1,h2,h3,h4,h5 button, .amiibo-name{
+    font-family: 'Bitter', serif;
+}
+
+
+.slide-contenedor{
+    max-width:100%;
+    max-height: 100vh;
+    width: 50%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+    /* margin: auto; */
+}
+
+/* .miSlider{
+    display: none;
+    transition: 2s;
+    max-height: 100vh;
+} */
+
+.miSlider img{
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+
+.direcciones{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.direcciones a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.direcciones a:hover{
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.barras{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:35px;
+}
+
+.barra{
+    cursor: pointer;
+    height:2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.active{
+    background-color: #e74c3c;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;    
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to{opacity:1;}
+}
+
+/* MODAL */
+
+
+#md h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#md a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding: 7px;
+    width: 220px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#md a:hover{background-color: #000; color: #fff; border: 1px solid #000;}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal{
+    position: center;
+    background-color: #fefefe;
+    margin: auto;
+    width: 30%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+@keyframes modal{
+    from{top:-330px; opacity: 0;}
+    to{top:0; opacity: 1;}
+}
+
+.close{
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: bold;
+}
+.close:hover{
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header, .footer{
+    padding: 8px 16px;
+    background: #000000;
+    color: #f2f2f2;
+}
+
+#md p{
+    text-align: justify;
+}
+
+.modal-body{
+    padding: 20px 16px;
+}
+
+@media screen and (max-width:900px){
+    .contenido-modal{
+        width: 70%;
+    }
+    .textos{
+        padding: 150px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .textos{
+        padding: 50px;
+    }
+}
+
+
+
+/* MODAL */
+
+
+
+#ribbon{
+    background-color: rgb(0, 0, 0);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgb(0, 0, 0) 25px, rgba(15, 13, 13, 0.767) 40px);
+}
+
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+#birthday{
+    background-color: rgb(4, 8, 68);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#birthday img{
+    position: relative;
+    margin-top: -30px;
+} 
+
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+}
+
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-ribbon .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+
+
+#separator-amiibos{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-amiibos .content{
+    background: url(../img/bg-03.png);
+    width: 110%;
+    height: 100px;
+    margin-left: -5%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#amiibos{
+    background: url(../img/bg-01.png),url(../img/bg-03.png);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center, center center;
+    background-size: 100%, auto;
+}
+
+.amiibo{
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+.amiibo:hover{
+    transform: scale(1.05);
+}
+
+.amiibo-name{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#separator-amiibos-footer{
+    height: 20vw;
+}
+
+#play{
+    background: url(../img/bg-04.png);
+    background-color: rgb(255,255,219);
+    background-size: 40px 40px;
+}
+
+#footer{
+    background: url(../img/bg-04.png);
+    background-color: rgb(224, 144, 24);
+    background-size: 50px 50px;
+}
